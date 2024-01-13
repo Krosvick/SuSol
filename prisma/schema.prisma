@@ -10,6 +10,37 @@ datasource db {
   relationMode = "prisma"
 }
 
+model Clients {
+  id String @id @default(uuid())
+  name String
+  email String? @unique
+  phone String? @unique
+  rut String? @unique
+  run String @unique
+  address Addresses[]
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  deletedAt DateTime?
+}
+
+model Addresses {
+  id String @id @default(uuid())
+  street String
+  number String
+  complement String?
+  commune String
+  city String
+  region String
+  country String
+  client Clients? @relation(fields: [clientId], references: [id])
+  clientId String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  deletedAt DateTime?
+
+  @@index ([clientId], name: "clientId")
+}
+
 model Post {
     id        Int      @id @default(autoincrement())
     name      String

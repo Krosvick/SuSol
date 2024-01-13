@@ -28,6 +28,6 @@ const extendedDB = db.$extends(
       }
     }
   })
-)
+) as PrismaClient;
 
 if (env.NODE_ENV !== "production") globalForPrisma.prisma = extendedDB;

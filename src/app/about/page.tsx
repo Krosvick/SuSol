@@ -8,20 +8,17 @@ export default function About(){
     const [count, setCount] = useState(0)
     const [intervalTime, setIntervalTime] = useState(1000) // Start with 1 second interval
 
-    let fibonacciNumbers = [0, 1]; // Store the first two Fibonacci numbers
-
-    const fibonacci = (n: number): number|undefined => {
-        if (n < fibonacciNumbers.length) {
-            // If the Fibonacci number has already been calculated, return it
-            fibonacciNumbers[n] = fibonacciNumbers[n] || 0;
-            return fibonacciNumbers[n];
-        } else {
-            // Otherwise, calculate it and store it
-            let a = n >= 2 ? fibonacciNumbers[n - 2] : 0;
-            let b = n >= 1 ? fibonacciNumbers[n - 1] : 1;
-            fibonacciNumbers[n] = a + b;
-            return a + b;
-        }
+    function fibonacci(n: number): number {
+        let memo = [0, 1];
+        const fibonacciHelper = (n: number): number => {
+            let result = memo[n];
+            if (typeof result !== "number") {
+                result = fibonacciHelper(n - 1) + fibonacciHelper(n - 2);
+                memo[n] = result;
+            }
+            return result;
+        };
+        return fibonacciHelper(n);
     }
 
     useEffect(() => {

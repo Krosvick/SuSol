@@ -9,7 +9,7 @@ export default function About(){
     const [intervalTime, setIntervalTime] = useState(1000) // Start with 1 second interval
 
     function fibonacci(n: number): number {
-        let memo = [0, 1];
+        const memo = [0, 1];
         const fibonacciHelper = (n: number): number => {
             let result = memo[n];
             if (typeof result !== "number") {

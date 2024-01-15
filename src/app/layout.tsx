@@ -4,8 +4,6 @@ import { Inter, Poppins } from "next/font/google";
 import { cookies } from "next/headers";
 import {Providers} from "./providers";
 
-import { TRPCReactProvider } from "~/trpc/react";
-
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-sans",

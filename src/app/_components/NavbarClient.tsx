@@ -1,17 +1,48 @@
 "use client"
 import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Button, NavbarMenuToggle, NavbarMenu, NavbarMenuItem} from "@nextui-org/react";
-import { useState } from "react";
+import { useState, useRef, useEffect} from "react";
 import { UserButton } from "@clerk/nextjs";
 import { ThemeSwitcher } from "./ThemeSwitcher";
 import { Logo } from "./icons/Logo";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+
 export function NavbarClient() {
-const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [headerColor, setHeaderColor] = useState('black');
+  const sectionRefs = useRef<HTMLElement[]>([]);
+  const pathname = usePathname();
+
+  useEffect(() => {
+    sectionRefs.current = Array.from(document.querySelectorAll('section'));
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        const rect = entry.target.getBoundingClientRect();
+        if (entry.isIntersecting && rect.top >= 0) {
+          const color = entry.target.getAttribute('data-header-color');
+          if (color) {
+            setHeaderColor(color);
+          }
+          else {
+            setHeaderColor('black');
+          }
+        }
+      });
+    }, { threshold: 1 });
+
+    sectionRefs.current.forEach((section) => observer.observe(section));
+
+    return () => {
+      sectionRefs.current.forEach((section) => observer.unobserve(section));
+    };
+  }, [pathname]);
+  const textColorClass = headerColor === 'white' ? 'text-white' : 'text-black';
 
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen} className="py-5" classNames={{
+    <Navbar id="client-navbar" className={`py-5 ${textColorClass}`} classNames={{
         wrapper:"lg:px-3 max-w-full",
-        base:"bg-transparent text-white backdrop-saturate-100 backdrop-blur-none fixed",
+        base:"bg-transparent dark:text-white backdrop-saturate-100 backdrop-blur-none fixed",
     }}>
         <NavbarContent>
             <NavbarMenuToggle
@@ -25,17 +56,17 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
         </NavbarContent>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <Link color="foreground" href="nosotros">
             Nosotros
           </Link>
         </NavbarItem>
         <NavbarItem isActive>
-          <Link href="#" aria-current="page">
+          <Link href="/" aria-current="page">
             Inicio
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <Link color="foreground" href="/contacto">
             Contacto
           </Link>
         </NavbarItem>
@@ -53,10 +84,10 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
           <Link href="/">Inicio</Link>
         </NavbarMenuItem>
         <NavbarMenuItem>
-          <Link href="/about">Nosotros</Link>
+          <Link href="/nosotros">Nosotros</Link>
         </NavbarMenuItem>
         <NavbarMenuItem>
-          <Link href="/Contacto">Contacto</Link>
+          <Link href="/contacto">Contacto</Link>
         </NavbarMenuItem>
       </NavbarMenu>
     </Navbar>

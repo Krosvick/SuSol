@@ -79,7 +79,7 @@ export function NavbarClient() {
         <NavbarItem className="hidden lg:hidden">
             xD
         </NavbarItem>
-        <NavbarItem>
+        <NavbarItem className="lg:pr-3">
             <ThemeSwitcher />
         </NavbarItem>
       </NavbarContent>

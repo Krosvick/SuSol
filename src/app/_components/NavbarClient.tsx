@@ -29,7 +29,7 @@ export function NavbarClient() {
           }
         }
       });
-    }, { threshold: 1 });
+    }, { threshold: 0.85 });
 
     sectionRefs.current.forEach((section) => observer.observe(section));
 

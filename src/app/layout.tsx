@@ -1,13 +1,10 @@
 import "~/styles/globals.css";
 
-import { Inter, Poppins } from "next/font/google";
+import { Poppins } from "next/font/google";
 import { cookies } from "next/headers";
 import {Providers} from "./providers";
 
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-sans",
-});
+
 
 const poppins = Poppins({
   weight: ["200","300","400", "500", "600", "700", "800", "900"],
@@ -29,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`font-sans ${poppins.variable}`}>
-          <Providers cookies={cookies().toString()}>
+          <Providers>
               {children}
           </Providers>
       </body>

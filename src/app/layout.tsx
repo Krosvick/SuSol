@@ -1,8 +1,8 @@
 import "~/styles/globals.css";
 
 import { Poppins } from "next/font/google";
-import { cookies } from "next/headers";
 import {Providers} from "./providers";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 
 
@@ -29,6 +29,7 @@ export default function RootLayout({
           <Providers>
               {children}
           </Providers>
+          <SpeedInsights/>
       </body>
     </html>
   );

@@ -2,7 +2,6 @@
 'use client'
 
 import {NextUIProvider} from '@nextui-org/react'
-import { TRPCReactProvider } from "~/trpc/react";
 import {ThemeProvider as NextThemesProvider} from "next-themes";
 
 export function Providers({children, cookies}: { children: React.ReactNode, cookies?: string }) {

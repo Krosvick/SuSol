@@ -1,5 +1,4 @@
 import { NavbarClient } from "../_components/NavbarClient"
-
 export default function ClientsLayout({
   children, // will be a page or nested layout
 }: {
@@ -7,8 +6,8 @@ export default function ClientsLayout({
 }) {
   return (
     <>
-    <NavbarClient/>
-    {children}
+      <NavbarClient/>
+      {children}
     </>
  
   )

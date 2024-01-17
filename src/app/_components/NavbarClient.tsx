@@ -1,7 +1,6 @@
 "use client"
 import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Button, NavbarMenuToggle, NavbarMenu, NavbarMenuItem} from "@nextui-org/react";
 import { useState, useRef, useEffect} from "react";
-import { UserButton } from "@clerk/nextjs";
 import { ThemeSwitcher } from "./ThemeSwitcher";
 import { Logo } from "./icons/Logo";
 import Link from "next/link";
@@ -43,11 +42,29 @@ export function NavbarClient() {
   }, [pathname]);
   const textColorClass = headerColor === 'white' ? 'text-white' : 'text-black';
 
+  const CloseMenuLink = ({ href, children } : { href: string, children: React.ReactNode }) => (
+    <div onClick={() => setIsMenuOpen(false)}>
+      <Link href={href}>{children}</Link>
+    </div>
+  );
+  const navItems = [
+    { href: 'nosotros', label: 'Nosotros' },
+    { href: '/', label: 'Inicio' },
+    { href: '/contacto', label: 'Contacto' },
+  ];
+  const navItemsResponsive = [
+    { href: '/', label: 'Inicio' },
+    { href: 'nosotros', label: 'Nosotros' },
+    { href: '/contacto', label: 'Contacto' },
+  ];
+
   return (
     <Navbar id="client-navbar" className={`py-5 ${textColorClass}`} classNames={{
         wrapper:"lg:px-3 max-w-full",
         base:"bg-transparent dark:text-white backdrop-saturate-100 backdrop-blur-none fixed",
-    }}>
+    }} 
+    isMenuOpen={isMenuOpen}
+    onMenuOpenChange={setIsMenuOpen}>
         <NavbarContent>
             <NavbarMenuToggle
                 aria-label={isMenuOpen ? "Close menu" : "Open menu"}
@@ -59,21 +76,13 @@ export function NavbarClient() {
             </NavbarBrand>
         </NavbarContent>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
-        <NavbarItem>
-          <Link color="foreground" href="nosotros">
-            Nosotros
-          </Link>
-        </NavbarItem>
-        <NavbarItem isActive>
-          <Link href="/" aria-current="page">
-            Inicio
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="/contacto">
-            Contacto
-          </Link>
-        </NavbarItem>
+        {navItems.map(item => (
+          <NavbarItem key={item.href} isActive={pathname === item.href}>
+            <Link color="foreground" href={item.href}>
+              {item.label}
+            </Link>
+          </NavbarItem>
+        ))}
       </NavbarContent>
       <NavbarContent justify="end">
         <NavbarItem className="hidden lg:hidden">
@@ -84,16 +93,13 @@ export function NavbarClient() {
         </NavbarItem>
       </NavbarContent>
       <NavbarMenu className="pt-10"> 
-        <NavbarMenuItem>
-          <Link href="/">Inicio</Link>
-        </NavbarMenuItem>
-        <NavbarMenuItem>
-          <Link href="/nosotros">Nosotros</Link>
-        </NavbarMenuItem>
-        <NavbarMenuItem>
-          <Link href="/contacto">Contacto</Link>
-        </NavbarMenuItem>
+        {navItemsResponsive.map(item => (
+          <NavbarMenuItem key={item.href}>
+            <CloseMenuLink href={item.href}>{item.label}</CloseMenuLink>
+          </NavbarMenuItem>
+        ))}
       </NavbarMenu>
     </Navbar>
   );
 }
+

@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export function MainSection(){
     return (
-        <section className="min-h-dvh min-w-screen h-dvh w-full text-center relative overflow-hidden text-white" data-header-color="white">
+        <section className="min-h-svh min-w-screen h-svh w-full text-center relative overflow-hidden text-white" data-header-color="white">
         <header className="z-30 relative h-screen flex flex-col justify-center items-center px-5 lg:px-60 text-wrap">
           <div className="mt-52">
             <h2 className="text-3xl dark:text-white font-medium">Siguiendo nuestra filosofía trabajamos por un futuro <span className="text-yellow-400">Brillante</span></h2>

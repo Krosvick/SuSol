@@ -13,6 +13,7 @@ export function NavbarClient() {
   const pathname = usePathname();
 
   useEffect(() => {
+    setHeaderColor('black');
     sectionRefs.current = Array.from(document.querySelectorAll('section'));
 
     const observer = new IntersectionObserver((entries) => {
@@ -48,13 +49,13 @@ export function NavbarClient() {
     </div>
   );
   const navItems = [
-    { href: 'nosotros', label: 'Nosotros' },
+    { href: '/nosotros', label: 'Nosotros' },
     { href: '/', label: 'Inicio' },
     { href: '/contacto', label: 'Contacto' },
   ];
   const navItemsResponsive = [
     { href: '/', label: 'Inicio' },
-    { href: 'nosotros', label: 'Nosotros' },
+    { href: '/nosotros', label: 'Nosotros' },
     { href: '/contacto', label: 'Contacto' },
   ];
 
@@ -70,10 +71,12 @@ export function NavbarClient() {
                 aria-label={isMenuOpen ? "Close menu" : "Open menu"}
                 className="sm:hidden"
             />
+            <Link href="/">
             <NavbarBrand className="flex gap-3">
                 <Logo className="size-24"/>
                 <p className="font-semibold text-inherit tracking-wider text-3xl">SuSol</p>
             </NavbarBrand>
+            </Link>
         </NavbarContent>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         {navItems.map(item => (

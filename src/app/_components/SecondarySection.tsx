@@ -12,7 +12,7 @@ export function SecondarySection(){
               <Image
                 className="absolute start-0 top-0 h-full w-full object-cover"
                 src="/images/articles/solar_panel.jpg"
-                alt="Image Description" layout='fill'
+                alt="Image Description" fill={true}
               />
             </div>
 

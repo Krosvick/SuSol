@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link';
 export function SecondarySection(){
     return (
-      <section className="min-w-screen relative h-dvh min-h-screen w-full items-center justify-center overflow-hidden px-6 lg:px-52 pb-3 lg:pb-5 pt-28 text-center lg:flex-row lg:gap-5">
+      <section className="min-h-dvh min-w-screen relative h-dvh min-h-screen w-full items-center justify-center overflow-hidden px-6 lg:px-52 pb-3 lg:pb-5 pt-28 text-center lg:flex-row lg:gap-5">
         <div className="grid gap-6 h-full">
           <Link
             className="group relative block rounded-xl dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600 h-full"

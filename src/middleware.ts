@@ -8,6 +8,7 @@ export default authMiddleware({
     "/",
     "/contacto",
     "/nosotros",
+    "/plan-susol",
   ],
 });
  

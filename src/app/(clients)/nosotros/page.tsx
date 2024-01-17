@@ -8,7 +8,7 @@ export default function NosotrosPage() {
           <div className="md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32">
             <div className="relative h-full w-auto">
               <Image
-                src="/images/articles/solar_panel.jpg"
+                src="/images/articles/solarinstaller.jpg"
                 alt="Equipo SuSol"
                 width={500}
                 height={500}

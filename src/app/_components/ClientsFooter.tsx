@@ -5,7 +5,7 @@ export function ClientFooter(){
         <footer className="w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 mx-auto">
         <div className="text-center">
             <div>
-            <Link className="flex-none text-xl font-semibold text-black dark:text-white dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="/" aria-label="Marca">SuSol</Link>
+            <Link className="flex-none text-xl font-semibold text-black dark:text-white dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="/" aria-label="SuSol link">SuSol</Link>
             </div>
 
             <div className="mt-3">

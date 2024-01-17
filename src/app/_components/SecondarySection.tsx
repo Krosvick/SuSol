@@ -30,10 +30,10 @@ export function SecondarySection(){
             <div className="absolute inset-x-0 bottom-0 z-10">
               <div className="flex h-full flex-col p-4 sm:p-6">
                 <h3 className="text-lg font-semibold text-white group-hover:text-white/[.8] sm:text-3xl hover:transform transition-all duration-300">
-                  Conoce nuestro plan para brindar energía solar a las familias de Tarapacá
+                  Conoce nuestro plan para facilitarte el acceso a la energía renovable
                 </h3>
                 <p className="mt-2 text-white/[.8]">
-                  Queremos brindarte un servicio a tu medida, donde nuestros profesionales te asesorarán en todo el proceso.
+                  Queremos brindarte un servicio a tu medida, donde nuestros profesionales te asesorarán en todo el proceso. Podrás generar tu propia energía y ahorrar en tu factura de luz.
                 </p>
               </div>
             </div>

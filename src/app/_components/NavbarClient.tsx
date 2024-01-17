@@ -71,12 +71,14 @@ export function NavbarClient() {
                 aria-label={isMenuOpen ? "Close menu" : "Open menu"}
                 className="sm:hidden"
             />
-            <Link href="/">
-            <NavbarBrand className="flex gap-3">
-                <Logo className="size-24"/>
-                <p className="font-semibold text-inherit tracking-wider text-3xl">SuSol</p>
-            </NavbarBrand>
-            </Link>
+            <li>
+              <Link href="/">
+              <NavbarBrand className="flex gap-3">
+                  <Logo className="size-24"/>
+                  <p className="font-semibold text-inherit tracking-wider text-3xl">SuSol</p>
+              </NavbarBrand>
+              </Link>
+            </li>
         </NavbarContent>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         {navItems.map(item => (

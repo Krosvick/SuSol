@@ -75,7 +75,10 @@ export function NavbarClient() {
               <Link href="/">
               <NavbarBrand className="flex gap-3">
                   <Logo className="size-24"/>
-                  <p className="font-semibold text-inherit tracking-wider text-3xl">SuSol</p>
+                <div className="flex flex-col">
+                  <h1 className="font-semibold text-inherit tracking-widest text-3xl">SuSol</h1>
+                  <span className="text-xs">Sustentabilidad Solar</span>
+                </div>
               </NavbarBrand>
               </Link>
             </li>

@@ -1,8 +1,9 @@
 import { z } from "zod";
-import { transporter,mailOptions } from "~/server/mailer";
+import { transporter } from "~/server/mailer";
 import { adminProcedure, createTRPCRouter, protectedProcedure, publicProcedure } from "~/server/api/trpc";
 import { ContactFormSchema } from "~/server/zodTypes/ContactFormTypes";
 import { TRPCError } from "@trpc/server";
+import { env } from "~/env";
 
 type ContactForm = z.infer<typeof ContactFormSchema>;
 
@@ -45,10 +46,9 @@ export const contactRouter = createTRPCRouter({
         .mutation(async ({ ctx, input }) => {
             try {
                 await transporter.sendMail({
-                    ...mailOptions,
                     ...generateEmailContent(input),
                     from: `"${input.nombre} ${input.apellido}" <${input.correo}>`,
-                    to: process.env.EMAIL,
+                    to: env.CONTACT_EMAIL,
                     subject: `Nuevo mensaje de ${input.nombre} ${input.apellido} fecha: ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}`,
                 });
                 return input;

@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function NosotrosPage() {
   return (
-    <main className="relative h-full w-full pt-24 bg-gradient-to-tr from-amber-200 to-emerald-300 dark:bg-gray-900 dark:from-gray-900 dark:to-gray-900">
+    <main className="relative h-full w-full pt-24 bg-gradient-to-br from-amber-200 to-emerald-300 dark:bg-gray-900 dark:from-gray-900 dark:to-gray-900">
       <section className="min-w-screen flex min-h-screen flex-col items-center justify-center p-5">
         <div className="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 bg-slate-900 rounded-md dark:bg-zinc-200 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-90" data-header-color="black">
           <div className="md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32">
@@ -12,6 +12,7 @@ export default function NosotrosPage() {
                 alt="Equipo SuSol"
                 width={500}
                 height={500}
+                priority={true}
               />
             </div>
 
@@ -19,10 +20,10 @@ export default function NosotrosPage() {
               <div className="space-y-6 sm:space-y-8">
                 <div className="space-y-2 md:space-y-4">
                   <h2 className="text-3xl font-bold dark:text-gray-800 text-gray-200 lg:text-4xl">
-                    SuSol apuesta por las energías renovables
+                    <span className='text-yellow-400 dark:text-black tracking-wider'>SuSol</span> apuesta por las energías renovables
                   </h2>
                   <p className="text-zinc-300 dark:text-gray-900">
-                    Creemos que el futuro de la energía es renovable. Por eso, nos dedicamos a la instalación de paneles solares para hogares y empresas. Nuestro objetivo es ayudar a las personas a ahorrar en su factura de la luz y a reducir su huella de carbono.
+                    Creemos que el futuro de la energía es renovable. Por eso, nos dedicamos a la instalación de soluciones de energía solar fotovoltaica y térmica. Nuestro objetivo es ayudar a las personas a generar su propia energía, ahorrar dinero y cuidar el medio ambiente.
                   </p>
                 </div>
 
@@ -49,7 +50,29 @@ export default function NosotrosPage() {
                       <span className="font-bold">Instalación, mantención y reparación</span> de paneles fotovoltaicos
                     </span>
                   </li>
+                  <li className="flex space-x-3">
+                    <span className="mt-0.5 flex h-5 w-5 items-center justify-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-800/30 dark:text-blue-500">
+                      <svg
+                        className="h-3.5 w-3.5 flex-shrink-0"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <polyline points="20 6 9 17 4 12" />
+                      </svg>
+                    </span>
 
+                    <span className="text-sm text-gray-200 dark:text-gray-900 sm:text-base">
+                      También de <span className='font-bold'>termos solares!</span>
+                    </span>
+                  </li>
+  
                   <li className="flex space-x-3">
                     <span className="mt-0.5 flex h-5 w-5 items-center justify-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-800/30 dark:text-blue-500">
                       <svg

@@ -3,7 +3,7 @@ import "~/styles/globals.css";
 import { Poppins } from "next/font/google";
 import {Providers} from "./providers";
 import { SpeedInsights } from "@vercel/speed-insights/next"
-
+import { Analytics } from '@vercel/analytics/react';
 
 
 const poppins = Poppins({
@@ -30,6 +30,7 @@ export default function RootLayout({
               {children}
           </Providers>
           <SpeedInsights/>
+          <Analytics /> 
       </body>
     </html>
   );

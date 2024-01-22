@@ -34,6 +34,7 @@ export function CarruselTermos() {
               alt={`termo infografia ${i + 1}`}
               width={500}
               height={500}
+              priority={true}
             />
           </CarouselItem>
         ))}

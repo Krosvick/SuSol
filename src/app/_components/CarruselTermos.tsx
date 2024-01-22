@@ -10,16 +10,20 @@ import {
 import Autoplay from "embla-carousel-autoplay"
 import { useRef } from "react";
 
+type AutoplayPlugin = ReturnType<typeof Autoplay>;
 export function CarruselTermos() {
-    const plugin = useRef(
-        Autoplay({ delay: 2000, stopOnInteraction: true })
-    )
+    const plugin = useRef<AutoplayPlugin | null>(null);
+
+    if (!plugin.current) {
+        plugin.current = Autoplay({ delay: 4000, stopOnInteraction: true });
+    }
+
     return(
     <Carousel
-      plugins={[plugin.current]}
+      plugins={plugin.current ? [plugin.current] : []}
       className="mx-10 max-w-xl"
-      onMouseEnter={plugin.current.stop}
-      onMouseLeave={plugin.current.reset}
+      onMouseEnter={() => plugin.current?.stop()}
+      onMouseLeave={() => plugin.current?.reset()}
     >
       <CarouselContent>
         {[...Array(7)].map((_, i) => (

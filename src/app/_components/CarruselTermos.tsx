@@ -13,17 +13,22 @@ import { useRef } from "react";
 
 type AutoplayPlugin = ReturnType<typeof Autoplay>;
 export function CarruselTermos() {
-    const plugin = useRef<AutoplayPlugin | null>(null);
+     // @ts-ignore
+    const plugin = useRef<AutoplayPlugin>();
 
     if (!plugin.current) {
+        // @ts-ignore
         plugin.current = Autoplay({ delay: 4000, stopOnInteraction: true });
     }
 
     return(
     <Carousel
+      // @ts-ignore
       plugins={plugin.current ? [plugin.current] : []}
       className="mx-10 max-w-xl"
+      // @ts-ignore
       onMouseEnter={() => plugin.current?.stop()}
+      // @ts-ignore
       onMouseLeave={() => plugin.current?.reset()}
     >
       <CarouselContent>

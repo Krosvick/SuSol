@@ -69,7 +69,7 @@ export default function energiaTermicaPage() {
                     Actualmente existen dos tipos de sistemas de energía solar térmica: <span className="font-bold">Presurizados</span> y por <span className="font-bold">Gravedad</span>. El primero es el más utilizado en viviendas, ya que es más económico y fácil de instalar. El segundo es más eficiente, pero también más caro y complejo de instalar.
                     </p>
                      <figure className="w-full flex justify-center">
-                      <iframe width="400" height="315" src="https://www.youtube.com/embed/RsLtZY9e7YU?si=rRaOXP3ZgCNiJB8b" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                      <iframe width="370" height="315" src="https://www.youtube.com/embed/RsLtZY9e7YU?si=rRaOXP3ZgCNiJB8b" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                     </figure>
                     <h3 className="text-2xl font-bold dark:text-yellow-400 lg:text-3xl">
                         Sistemas presurizados

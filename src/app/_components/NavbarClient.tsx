@@ -49,14 +49,18 @@ export function NavbarClient() {
     </div>
   );
   const navItems = [
+    { href: '/energia-solar-fotovoltaica', label: 'Energía Fotovoltaica' },
     { href: '/nosotros', label: 'Nosotros' },
     { href: '/', label: 'Inicio' },
     { href: '/contacto', label: 'Contacto' },
+    { href: '/energia-solar-termica', label: 'Energía Térmica' },
   ];
   const navItemsResponsive = [
     { href: '/', label: 'Inicio' },
     { href: '/nosotros', label: 'Nosotros' },
     { href: '/contacto', label: 'Contacto' },
+    { href: '/energia-solar-fotovoltaica', label: 'Energía Solar Fotovoltaica' },
+    { href: '/energia-solar-termica', label: 'Energía Solar Térmica' }, 
   ];
 
   return (
@@ -100,9 +104,9 @@ export function NavbarClient() {
             <ThemeSwitcher />
         </NavbarItem>
       </NavbarContent>
-      <NavbarMenu className="pt-10"> 
+      <NavbarMenu className="mt-8"> 
         {navItemsResponsive.map(item => (
-          <NavbarMenuItem key={item.href}>
+          <NavbarMenuItem key={item.href} className="py-2 text-xl">
             <CloseMenuLink href={item.href}>{item.label}</CloseMenuLink>
           </NavbarMenuItem>
         ))}

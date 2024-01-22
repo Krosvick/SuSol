@@ -6,6 +6,7 @@ import * as z from "zod";
 import { api } from "~/trpc/react";
 import { ContactFormSchema } from "~/server/zodTypes/ContactFormTypes";
 import SuccessContact from "./SuccessContact";
+import { track } from "@vercel/analytics/react";
 
 type ContactForm = z.infer<typeof ContactFormSchema>;
 
@@ -18,6 +19,7 @@ export function ContactForm(){
     const { isLoading, data, error, isSuccess, mutateAsync: mandarFormulario, isError } = api.contact.send.useMutation();
     const onSubmit = async (data: ContactForm) => {
         try {
+            track("contact form submit");
             await mandarFormulario(data);
         } catch (error) {
             console.log(error);

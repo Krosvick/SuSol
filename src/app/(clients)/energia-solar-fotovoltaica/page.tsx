@@ -108,7 +108,7 @@ export default function energiaFotovoltaicaPage() {
                       Los paneles solares monocristalinos son más eficientes y ocupan menos espacio que los paneles policristalinos. Por lo tanto, son ideales para instalaciones residenciales, donde el espacio es limitado. Además, tienen una vida útil de 25 años, por lo que son una excelente inversión.
                     </p>
                     <h3 className="text-2xl font-bold dark:text-yellow-400 lg:text-3xl">
-                      Paneles solares monocristalinos
+                      Paneles solares policristalinos
                     </h3>
                     <p className="text-lg text-gray-800 dark:text-gray-200">
                       Los paneles solares policristalinos son más económicos que los monocristalinos, pero también menos eficientes. Por lo tanto, ocupan más espacio y son menos recomendables para instalaciones residenciales. Sin embargo, son una buena opción para instalaciones comerciales o industriales, donde el espacio no es un problema.

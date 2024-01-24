@@ -3,7 +3,6 @@ import Image from "next/image";
 
 export default function PlanSusolPage() {
     return (
-      <main className="relative h-screen w-full">
         <section className="min-w-screen size-screen relative flex min-h-screen items-center justify-center pt-24 lg:pt-32">
           <div className="mx-auto max-w-[85rem] px-4 sm:px-6 lg:px-8">
             <div className="grid gap-y-8 lg:grid-cols-2 lg:gap-x-6 lg:gap-y-0">
@@ -31,9 +30,9 @@ export default function PlanSusolPage() {
                       Regresar a la pagina principal
                     </Link>
 
-                    <h2 className="text-3xl font-bold dark:text-yellow-400 lg:text-5xl">
+                    <h1 className="text-3xl font-bold dark:text-yellow-400 lg:text-5xl">
                       Conoce el plan de SuSol
-                    </h2>
+                    </h1>
 
                     <div className="flex items-center gap-x-5">
                       <Link
@@ -155,6 +154,5 @@ export default function PlanSusolPage() {
             </div>
           </div>
         </section>
-      </main>
     );
 }

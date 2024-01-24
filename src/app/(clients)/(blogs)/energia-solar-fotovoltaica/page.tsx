@@ -3,7 +3,6 @@ import Image from "next/image";
 
 export default function energiaFotovoltaicaPage() {
     return (
-      <main className="relative h-screen w-full">
         <section className="min-w-screen size-screen relative flex min-h-screen items-center justify-center pt-24 lg:pt-32">
           <div className="mx-auto max-w-[85rem] px-4 sm:px-6 lg:px-8">
             <div className="grid gap-y-8 lg:grid-cols-2 lg:gap-x-6 lg:gap-y-0">
@@ -31,9 +30,9 @@ export default function energiaFotovoltaicaPage() {
                       Regresar a la pagina principal
                     </Link>
 
-                    <h2 className="text-3xl font-bold dark:text-yellow-400 lg:text-5xl">
+                    <h1 className="text-3xl font-bold dark:text-yellow-400 lg:text-5xl">
                       Conoce sobre la energía solar fotovoltaica
-                    </h2>
+                    </h1>
 
                     <div className="flex items-center gap-x-5">
                       <Link
@@ -105,27 +104,69 @@ export default function energiaFotovoltaicaPage() {
                       Paneles solares monocristalinos
                     </h3>
                     <p className="text-lg text-gray-800 dark:text-gray-200">
-                      Los paneles solares monocristalinos son más eficientes y ocupan menos espacio que los paneles policristalinos. Por lo tanto, son ideales para instalaciones residenciales, donde el espacio es limitado. Además, tienen una vida útil de 25 años, por lo que son una excelente inversión.
+                      El panel solar monocristalino, está compuesta por células de un único cristal de cilicio, tienen una eficiencia que ronda entre el 18% y el 23%, rendimiento muy superior al panel solar policristalino, lo que significa que genera más energía con la misma cantidad de luz solar, además de tener una vida útil muy superior (25 a 30 años), su valor en el mercado es superior.
                     </p>
                     <h3 className="text-2xl font-bold dark:text-yellow-400 lg:text-3xl">
                       Paneles solares policristalinos
                     </h3>
                     <p className="text-lg text-gray-800 dark:text-gray-200">
-                      Los paneles solares policristalinos son más económicos que los monocristalinos, pero también menos eficientes. Por lo tanto, ocupan más espacio y son menos recomendables para instalaciones residenciales. Sin embargo, son una buena opción para instalaciones comerciales o industriales, donde el espacio no es un problema.
+                      Los paneles solares policristalinos son la unión de varios cristales de silicio, la eficiencia de estos paneles ronda entre el 14% y el 16%, es decir que la capacidad de generar energía es inferior a los monocristalinos, puesto que usan una tecnología menos avanzada y su valor en el mercado es inferior.
                     </p>
-                    <figure>
-                      <Image
-                        className="w-full rounded-xl object-cover"
-                        src="/images/paneles/3.jpg"
-                        alt="Paneles solares"
-                        width={1500}
-                        height={1200}
-                      />
-                      <figcaption className="mt-3 text-center text-sm text-gray-500">
-                        Gran cantidad de paneles solares en una instalación industrial
-                      </figcaption>
-                    </figure>
-
+                    <h3 className="text-2xl font-bold dark:text-yellow-400 lg:text-3xl">Cuando se trata de elegir un tipo de panel solar, es importante considerar sus necesidades.</h3>
+                    <h4 className="text-lg font-medium dark:text-yellow-400 lg:text-2xl">Instalación solar conectada a la red (on-grid)</h4>
+                    <p className="text-lg text-gray-800 dark:text-gray-200">
+                      Este tipo de instalación se encuentra conectado a la red de distribución, permitiendo que los clientes puedan generar y consumir energía solar, pero con el respaldo de la red eléctrica, en caso de que su hogar o empresa consuma más energía generada por los paneles, además de poder inyectar los excedentes de energía a la red de distribución, generando saldos a favor.
+                    </p>
+                    <div className="flex justify-center w-full">
+                      <figure className="lg:w-2/3 w-full">
+                        <Image
+                          className="w-full h-auto rounded-xl object-cover"
+                          src="/images/paneles/on-grid.jpg"
+                          alt="Paneles solares"
+                          width={1500}
+                          height={1200}
+                        />
+                        <figcaption className="mt-3 text-center text-sm text-gray-500">
+                          Instalación solar conectada a la red
+                        </figcaption>
+                      </figure>
+                    </div>
+                    <h4 className="text-lg font-medium dark:text-yellow-400 lg:text-2xl">Instalación solar autónoma (off-grid)</h4>
+                    <p className="text-lg text-gray-800 dark:text-gray-200">
+                      este tipo de instalación no requiere estar conectado a la red de distribución, ya que cuenta con un conjunto de baterías capas de almacenar toda la energía generada durante el día, de esta forma, puede ser utilizada en cualquier momento, siendo un sistema totalmente independiente y autónomo. Este sistema normalmente es recomendado para lugares donde no hay red de distribución eléctrica.
+                    </p>
+                    <div className="flex justify-center w-full">
+                      <figure className="lg:w-2/3 w-full">
+                        <Image
+                          className="w-full h-auto rounded-xl object-cover"
+                          src="/images/paneles/off-grid.jpg"
+                          alt="Paneles solares"
+                          width={1500}
+                          height={1200}
+                        />
+                        <figcaption className="mt-3 text-center text-sm text-gray-500">
+                          Instalación solar autónoma
+                        </figcaption>
+                      </figure>
+                    </div>
+                    <h4 className="text-lg font-medium dark:text-yellow-400 lg:text-2xl">Instalación solar híbrida</h4>
+                    <p className="text-lg text-gray-800 dark:text-gray-200">
+                     Este sistema te da la posibilidad de almacenar la energía en baterías para ser utilizada en los momentos de falla de suministro de la red de distribución, además te permite vender el excedente de energía cuando esta sea superior al consumo de tu hogar o empresa.
+                    </p>
+                    <div className="flex justify-center w-full">
+                      <figure className="lg:w-2/3 w-full">
+                        <Image
+                          className="w-full h-auto rounded-xl object-cover"
+                          src="/images/paneles/hybrid.jpg"
+                          alt="Paneles solares"
+                          width={1500}
+                          height={1200}
+                        />
+                        <figcaption className="mt-3 text-center text-sm text-gray-500">
+                          Instalación solar híbrida
+                        </figcaption>
+                      </figure>
+                    </div>
                     <div className="space-y-3">
                       <p className="text-lg text-gray-800 dark:text-gray-200">
                         En Susol queremos ademas brindarte distintas modalidades de instalación, para que puedas elegir la que más se acomode a tus necesidades. Puedes conocer más en nuestra sección de:
@@ -149,6 +190,5 @@ export default function energiaFotovoltaicaPage() {
             </div>
           </div>
         </section>
-      </main>
     );
 }

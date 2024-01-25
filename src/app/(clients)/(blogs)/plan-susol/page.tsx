@@ -1,7 +1,34 @@
 import Link from "next/link";
 import Image from "next/image";
+import { MythCard } from "~/app/_components/MythCard";
 
 export default function PlanSusolPage() {
+    const mitos = {
+      mito1: {
+        mito: "Las energías renovables son caras.",
+        realidad: "Los avances tecnológicos han reducido los costes de las energías renovables, siendo la solar y eólica las más baratas."
+      },
+      mito2: {
+        mito: "La energía solar y eólica, se interrumpen y no son continuas.",
+        realidad: "Existen estudios y tecnologías que garantizan la generación constante de energía solar y eólica."
+      },
+      mito3: {
+        mito: "Los paneles solares y los aerogeneradores producen enfermedades entre las personas que viven cerca.",
+        realidad: "Estudios demuestran que estos equipos no causan enfermedades y no utilizan elementos contaminantes."
+      },
+      mito4: {
+        mito: "Las energías renovables ocupan el espacio de agricultores y ganaderos.",
+        realidad: "Las instalaciones de energía solar se ubican en terrenos desérticos y pueden beneficiar a zonas agrícolas."
+      },
+      mito5: {
+        mito: "Las energías renovables no llegan a cubrir toda la demanda eléctrica.",
+        realidad: "La generación de energía renovable ya supera el 38,4 % y puede garantizar el suministro eléctrico."
+      },
+      mito6: {
+        mito: "Los materiales de las energías renovables no son tan buenos para el medioambiente.",
+        realidad: "La ley obliga a reciclar todos los materiales fotovoltaicos, y no emiten gases de efecto invernadero."
+      }
+    }
     return (
         <section className="min-w-screen size-screen relative flex min-h-screen items-center justify-center pt-24 lg:pt-32">
           <div className="mx-auto max-w-[85rem] px-4 sm:px-6 lg:px-8">
@@ -122,84 +149,14 @@ export default function PlanSusolPage() {
                     <div className="w-full flex justify-center">
                       <Link href="/energia-solar-termica" className="inline-flex items-center gap-1.5 rounded-sm bg-gray-100 px-3 py-1 text-md text-black hover:bg-gray-200 dark:bg-yellow-400 dark:text-black dark:hover:bg-yellow-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600 sm:px-4 sm:py-2 sm:text-sm transition duration-200 ease-in-out scale-150 font-semibold">Haz click aquí</Link>
                     </div>
+                    <h3 className="text-2xl font-bold dark:text-yellow-400 lg:text-3xl">
+                        Mitos y realidades de la energía solar:
+                    </h3>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                      <div>
-                        <h3 className="text-2xl font-bold dark:text-yellow-400 lg:text-3xl">
-                          Mitos de las energías renovables
-                        </h3>
-                        <ol className="list-decimal text-lg text-gray-800 dark:text-gray-200 ml-5 gap-5">
-                          <li className="py-1">
-                            <p>
-                              <span className="font-bold">Mito 1:</span> Las energías renovables son caras.
-                            </p>
-                          </li>
-                          <li className="py-1">
-                            <p>
-                              <span className="font-bold">Mito 2:</span> La energía solar y eólica, se interrumpen y no son continuas.
-                            </p>
-                          </li>
-                          <li className="py-1">
-                            <p>
-                              <span className="font-bold">Mito 3:</span> Los paneles solares y los aerogeneradores producen enfermedades entre las personas que viven cerca.
-                            </p>
-                          </li>
-                          <li className="py-1">
-                            <p>
-                              <span className="font-bold">Mito 4:</span>Las energías renovables ocupan el espacio de agricultores y ganaderos  
-                            </p>
-                          </li>
-                          <li className="py-1">
-                            <p>
-                              <span className="font-bold">Mito 5:</span> Las energías renovables no llegan a cubrir toda la demanda eléctrica
-                            </p>
-                          </li>
-                          <li className="py-1">
-                            <p>
-                              <span className="font-bold">Mito 6:</span> Los materiales de las energías renovables no son tan buenos para el medioambiente 
-                            </p>
-                          </li>
-                        </ol>
-                      </div>
-                      <div>
-                        <h3 className="text-2xl font-bold dark:text-yellow-400 lg:text-3xl">
-                          Realidades de las energías renovables
-                        </h3>
-                        <ol className="list-decimal text-lg text-gray-800 dark:text-gray-200 ml-5">
-                          <li className="py-1">
-                            <p>
-                              <span className="font-bold">Realidad:</span> Gracias a los avances tecnológicos y el desarrollo de esta área de investigación, los costes han reducido de manera impresionante, la energía solar y la eólica se han vuelto las más baratas.
-                            </p>
-                          </li>
-                          <li className="py-1">
-                            <p>
-                              <span className="font-bold">Realidad:</span>Es muy importante recordar que, al hacer un proyecto de este tipo, siempre habrá un estudio para determinar la ubicación ideal con las condiciones ambientales requeridas, con los recursos naturales necesarios de manera abundante, permitiendo que la generación de energía sea constante. Adicionalmente a este punto, existen diferentes tecnologías para abordar estos puntos, como lo son los inversores, y las baterías, permitiendo que su funcionamiento y desempeño sea el deseado. Volviendo a este tipo de generación de energía la más competitiva. 
-                            </p>
-                          </li>
-                          <li className="py-1">
-                            <p>
-                              <span className="font-bold">Realidad:</span> Estudios muestran que ningún componente de estos equipos causa una enfermedad, y al no utilizar elementos contaminantes como el combustóleo para la generación de energía, no se considera una tecnología que pudiera dañar la salud.
-                              En tecnologías que utilizan componentes contaminantes como el combustóleo, pueden llegar a emitir emisiones contaminantes al aire que puedan ser respiradas por los ciudadanos provocando enfermedades de respiración, sin embargo, los paneles solares y aerogeneradores no utilizan combustóleo para generar energía.
-                            </p>
-                          </li>
-                          <li className="py-1">
-                            <p>
-                              <span className="font-bold">Realidad:</span> Las instalaciones de energía solar se encuentran comúnmente en terrenos desérticos y que no tienen ningún otro uso. Y al contrario de este mito, los sistemas fotovoltaicos se han implementado en diferentes zonas agrícolas para satisfacer la energía necesaria para los sistemas de riego, facilitando energía en lugares que hasta el momento era difícil conseguir. Y a diferencia de otras tecnologías, esta no emite emisiones contaminantes que pudieran afectar a los sembradíos o animales ganaderos.
-                            </p>
-                          </li>
-                          <li className="py-1">
-                            <p>
-                              <span className="font-bold">Realidad:</span> La generación de energía proveniente de fuentes renovables ya supera el 38,4 % según datos de Red Eléctrica. Cada vez son más quienes se pasan a este tipo de energías limpias. Podríamos unir las diferentes energías renovables que hay para garantizar el máximo suministro eléctrico posible, poniendo como meta el autoabastecimiento, recarga de coches, iluminación de ciudades, etc. 
-                            </p>
-                          </li>
-                          <li className="py-1">
-                            <p>
-                              <span className="font-bold">Realidad:</span> Se obliga por ley a reciclar todos los materiales fotovoltaicos, dejando en manos de los fabricantes e importadores la obligación de recoger y procesar los materiales que hayan dejado de funcionar. Por lo tanto, podemos demostrar que esta afirmación es falsa con respecto a las energías renovables y, concretamente, la energía solar. La nula emisión de gases de efecto invernadero de estas fuentes energéticas es otro motivo por el que desmentir que no son adecuadas para el medioambiente.
-                            </p>
-                          </li>
-                        </ol>
-                      </div>
+                      {Object.values(mitos).map((mito, index) => (
+                        <MythCard key={index} Myth={mito.mito} Reality={mito.realidad}/>
+                      ))}
                     </div>
-                    
                   </div>
                 </div>
               </div>

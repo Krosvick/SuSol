@@ -27,7 +27,7 @@ export function CarruselTermos() {
       onMouseLeave={() => plugin.current?.reset()}
     >
       <CarouselContent>
-        {[...Array(7)].map((_, i) => (
+        {[...Array(6)].map((_, i) => (
           <CarouselItem key={i} className="flex justify-center">
             <Image
               src={`/images/termos/${i + 1}.jpg`}

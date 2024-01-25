@@ -47,7 +47,7 @@ export default function PlanSusolPage() {
                     </div>
 
                     <p className="text-lg text-gray-800 dark:text-gray-200">
-                      SuSol es una empresa nacional, nueva pero con ganas de desafiar el mercado de la energía renovable. Nuestro objetivo es facilitar el acceso a la energía solar, a través de un servicio personalizado y de calidad. Queremos que nuestros clientes se sientan acompañados en todo el proceso, desde la asesoría hasta la instalación y mantención de los equipos.
+                      SuSol es una empresa nueva, nacida en el norte y para el norte. Nuestro objetivo es facilitar el acceso a las energías renovables a través de un servicio personalizado y de calidad. Queremos que nuestros clientes se sientan acompañados en todo el proceso, desde la creación del proyecto hasta la instalación y mantención de los equipos.
                     </p>
                     <div className="w-full flex justify-center">
                       <Link href="/contacto" className="inline-flex items-center gap-1.5 rounded-sm bg-gray-100 px-3 py-1 text-md text-black hover:bg-gray-200 dark:bg-yellow-400 dark:text-black dark:hover:bg-yellow-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600 sm:px-4 sm:py-2 sm:text-sm transition duration-200 ease-in-out scale-150 font-semibold">Contáctanos</Link>
@@ -59,6 +59,9 @@ export default function PlanSusolPage() {
                     <h3 className="text-2xl font-bold dark:text-yellow-400 lg:text-3xl">
                         Nuestros servicios
                     </h3>
+                    <p className="text-lg text-gray-800 dark:text-gray-200">
+                      En SuSol ofrecemos dos tipos de servicios: energía solar térmica y energía solar fotovoltaica. La energía solar térmica es aquella que se utiliza para calentar agua, mientras que la energía solar fotovoltaica es aquella que se utiliza para generar electricidad.
+                    </p>
                     <div className="text-center">
                       <div className="grid gap-3 lg:grid-cols-2">
                         <div className="grid grid-cols-2 gap-3 lg:grid-cols-1">
@@ -96,33 +99,10 @@ export default function PlanSusolPage() {
                         Imágenes de nuestros servicios
                       </span>
                     </div>
-
-                    <p className="text-lg text-gray-800 dark:text-gray-200">
-                      Queremos hablarte brevemente de los tipos de instalación fotovoltaica que realizamos en SuSol:
-                    </p>
-                    <h3 className="text-2xl font-bold dark:text-yellow-400 lg:text-3xl">
-                        Instalación off-grid o aislada
-                    </h3>
-                    <p className="text-lg text-gray-800 dark:text-gray-200">
-                      Este tipo de instalación es ideal para lugares donde no llega la red eléctrica, como por ejemplo, casas de campo o de veraneo. En este caso, se instala un sistema fotovoltaico que permite generar y almacenar energía, para que la vivienda pueda funcionar de manera independiente.
-                    </p>
-
-                    <h3 className="text-2xl font-bold dark:text-yellow-400 lg:text-3xl">
-                        Instalación on-grid o conectada a la red
-                    </h3>
-                    <p className="text-lg text-gray-800 dark:text-gray-200">
-                      Este tipo de instalación es ideal para viviendas que ya tienen acceso a la red eléctrica, ya que permite generar energía y vender el excedente a la compañía eléctrica. De esta manera, se puede ahorrar dinero en la cuenta de la luz.
-                    </p>
                     
                     <h3 className="text-2xl font-bold dark:text-yellow-400 lg:text-3xl">
-                        Instalación híbrida
+                        Aprende acerca de las instalaciones que realizamos sobre energía fotovaltaica:
                     </h3>
-                    <p className="text-lg text-gray-800 dark:text-gray-200">
-                      Este tipo de instalación es ideal para viviendas que ya tienen acceso a la red eléctrica, pero que quieren ser más independientes. En este caso, se instala un sistema fotovoltaico que permite generar energía y almacenarla en baterías, para que la vivienda pueda funcionar de manera independiente. Además, se puede vender el excedente a la compañía eléctrica puesto que el sistema está conectado a la red.
-                    </p>
-                    <p className="text-lg text-gray-800 dark:text-gray-200">
-                      Quieres saber más acerca de la energía solar fotovoltaica?:
-                    </p>
                     <div className="w-full flex justify-center">
                       <Link href="/energia-solar-fotovoltaica" className="inline-flex items-center gap-1.5 rounded-sm bg-gray-100 px-3 py-1 text-md text-black hover:bg-gray-200 dark:bg-yellow-400 dark:text-black dark:hover:bg-yellow-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600 sm:px-4 sm:py-2 sm:text-sm transition duration-200 ease-in-out scale-150 font-semibold">Haz click aquí</Link>
                     </div>
@@ -135,19 +115,91 @@ export default function PlanSusolPage() {
                         Leonardo DiCaprio
                       </p>
                     </blockquote>
-                    <h2 className="text-2xl font-bold dark:text-yellow-400 lg:text-3xl">
-                        Energía solar térmica
-                    </h2>
-
-                    <p className="text-lg text-gray-800 dark:text-gray-200">
-                      Además de la energía fotovoltaica, en SuSol también realizamos instalaciones de energía solar térmica. Este tipo de energía permite calentar el agua de la vivienda, a través de un sistema de paneles solares térmicos. De esta manera, se puede ahorrar dinero en la cuenta del gas.
-                    </p>
-                    <p className="text-lg text-gray-800 dark:text-gray-200">
-                      Quieres saber más acerca de la energía solar térmica?:
-                    </p>
+                    <h3 className="text-2xl font-bold dark:text-yellow-400 lg:text-3xl">
+                        Quieres aprender más acerca de los servicios de energía solar térmica que realizamos?:
+                    </h3>
+                    
                     <div className="w-full flex justify-center">
                       <Link href="/energia-solar-termica" className="inline-flex items-center gap-1.5 rounded-sm bg-gray-100 px-3 py-1 text-md text-black hover:bg-gray-200 dark:bg-yellow-400 dark:text-black dark:hover:bg-yellow-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600 sm:px-4 sm:py-2 sm:text-sm transition duration-200 ease-in-out scale-150 font-semibold">Haz click aquí</Link>
                     </div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div>
+                        <h3 className="text-2xl font-bold dark:text-yellow-400 lg:text-3xl">
+                          Mitos de las energías renovables
+                        </h3>
+                        <ol className="list-decimal text-lg text-gray-800 dark:text-gray-200 ml-5 gap-5">
+                          <li className="py-1">
+                            <p>
+                              <span className="font-bold">Mito 1:</span> Las energías renovables son caras.
+                            </p>
+                          </li>
+                          <li className="py-1">
+                            <p>
+                              <span className="font-bold">Mito 2:</span> La energía solar y eólica, se interrumpen y no son continuas.
+                            </p>
+                          </li>
+                          <li className="py-1">
+                            <p>
+                              <span className="font-bold">Mito 3:</span> Los paneles solares y los aerogeneradores producen enfermedades entre las personas que viven cerca.
+                            </p>
+                          </li>
+                          <li className="py-1">
+                            <p>
+                              <span className="font-bold">Mito 4:</span>Las energías renovables ocupan el espacio de agricultores y ganaderos  
+                            </p>
+                          </li>
+                          <li className="py-1">
+                            <p>
+                              <span className="font-bold">Mito 5:</span> Las energías renovables no llegan a cubrir toda la demanda eléctrica
+                            </p>
+                          </li>
+                          <li className="py-1">
+                            <p>
+                              <span className="font-bold">Mito 6:</span> Los materiales de las energías renovables no son tan buenos para el medioambiente 
+                            </p>
+                          </li>
+                        </ol>
+                      </div>
+                      <div>
+                        <h3 className="text-2xl font-bold dark:text-yellow-400 lg:text-3xl">
+                          Realidades de las energías renovables
+                        </h3>
+                        <ol className="list-decimal text-lg text-gray-800 dark:text-gray-200 ml-5">
+                          <li className="py-1">
+                            <p>
+                              <span className="font-bold">Realidad:</span> Gracias a los avances tecnológicos y el desarrollo de esta área de investigación, los costes han reducido de manera impresionante, la energía solar y la eólica se han vuelto las más baratas.
+                            </p>
+                          </li>
+                          <li className="py-1">
+                            <p>
+                              <span className="font-bold">Realidad:</span>Es muy importante recordar que, al hacer un proyecto de este tipo, siempre habrá un estudio para determinar la ubicación ideal con las condiciones ambientales requeridas, con los recursos naturales necesarios de manera abundante, permitiendo que la generación de energía sea constante. Adicionalmente a este punto, existen diferentes tecnologías para abordar estos puntos, como lo son los inversores, y las baterías, permitiendo que su funcionamiento y desempeño sea el deseado. Volviendo a este tipo de generación de energía la más competitiva. 
+                            </p>
+                          </li>
+                          <li className="py-1">
+                            <p>
+                              <span className="font-bold">Realidad:</span> Estudios muestran que ningún componente de estos equipos causa una enfermedad, y al no utilizar elementos contaminantes como el combustóleo para la generación de energía, no se considera una tecnología que pudiera dañar la salud.
+                              En tecnologías que utilizan componentes contaminantes como el combustóleo, pueden llegar a emitir emisiones contaminantes al aire que puedan ser respiradas por los ciudadanos provocando enfermedades de respiración, sin embargo, los paneles solares y aerogeneradores no utilizan combustóleo para generar energía.
+                            </p>
+                          </li>
+                          <li className="py-1">
+                            <p>
+                              <span className="font-bold">Realidad:</span> Las instalaciones de energía solar se encuentran comúnmente en terrenos desérticos y que no tienen ningún otro uso. Y al contrario de este mito, los sistemas fotovoltaicos se han implementado en diferentes zonas agrícolas para satisfacer la energía necesaria para los sistemas de riego, facilitando energía en lugares que hasta el momento era difícil conseguir. Y a diferencia de otras tecnologías, esta no emite emisiones contaminantes que pudieran afectar a los sembradíos o animales ganaderos.
+                            </p>
+                          </li>
+                          <li className="py-1">
+                            <p>
+                              <span className="font-bold">Realidad:</span> La generación de energía proveniente de fuentes renovables ya supera el 38,4 % según datos de Red Eléctrica. Cada vez son más quienes se pasan a este tipo de energías limpias. Podríamos unir las diferentes energías renovables que hay para garantizar el máximo suministro eléctrico posible, poniendo como meta el autoabastecimiento, recarga de coches, iluminación de ciudades, etc. 
+                            </p>
+                          </li>
+                          <li className="py-1">
+                            <p>
+                              <span className="font-bold">Realidad:</span> Se obliga por ley a reciclar todos los materiales fotovoltaicos, dejando en manos de los fabricantes e importadores la obligación de recoger y procesar los materiales que hayan dejado de funcionar. Por lo tanto, podemos demostrar que esta afirmación es falsa con respecto a las energías renovables y, concretamente, la energía solar. La nula emisión de gases de efecto invernadero de estas fuentes energéticas es otro motivo por el que desmentir que no son adecuadas para el medioambiente.
+                            </p>
+                          </li>
+                        </ol>
+                      </div>
+                    </div>
+                    
                   </div>
                 </div>
               </div>

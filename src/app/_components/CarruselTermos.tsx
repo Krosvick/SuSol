@@ -30,7 +30,7 @@ export function CarruselTermos() {
         {[...Array(6)].map((_, i) => (
           <CarouselItem key={i} className="flex justify-center">
             <Image
-              src={`/images/termos/${i + 1}.jpg`}
+              src={`/images/termos/${i + 1}.jpeg`}
               alt={`termo infografia ${i + 1}`}
               width={500}
               height={500}

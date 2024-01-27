@@ -69,7 +69,7 @@ export default function NosotrosPage() {
                     </span>
 
                     <span className="text-sm text-gray-200 dark:text-gray-900 sm:text-base">
-                      También de <span className='font-bold'>termos solares!</span>
+                       <span className='font-bold'>Termos solares!</span>
                     </span>
                   </li>
   

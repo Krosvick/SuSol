@@ -1,8 +1,8 @@
 
 type BlogCardProps = {
-    title: string;
+    title?: string;
     subtitle?: string | null;
-    secondaryTitle: string;
+    secondaryTitle?: string;
     text?: string | null;
 }
 

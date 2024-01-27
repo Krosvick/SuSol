@@ -60,7 +60,7 @@ export default function energiaFotovoltaicaPage() {
                       Tipos de paneles solares
                     </h3>
                     <p className="text-lg text-gray-800 dark:text-gray-200">
-                      Actualmente en SuSol trabajamos con dos tipos de paneles solares: <span className="font-bold">Monocristalinos</span> y <span className="font-bold">Policristalinos</span>.
+                      Existen 2 tipos de paneles solares: <span className="font-bold">Monocristalinos</span> y <span className="font-bold">Policristalinos</span>.
                     </p>
 
                     <div className="text-center">

@@ -6,6 +6,6 @@ type MythCardProps = {
 }
 export function MythCard({Myth, Reality}: MythCardProps){
     return(
-        <BlogCard title="Mito" secondaryTitle="Realidad" subtitle={Myth} text={Reality}/>
+        <BlogCard title={Myth} text={Reality}/>
     )
 }

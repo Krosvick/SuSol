@@ -85,9 +85,9 @@ export default function PlanSusolPage() {
                         Nuestros servicios
                     </h3>
                     <p className="text-lg text-gray-800 dark:text-gray-200">
-                      En SuSol ofrecemos dos tipos de servicios: instalación, mantención y reparación de:
+                      En SuSol ofrecemos los siguientes servicios: instalación, mantención y reparación de:
                     </p>
-                    <BlogCard title="Energía solar fotovoltaica" text="Con la cual podrás generar tu propia energía eléctrica, para tu consumo o para vender los excedentes a la red eléctrica."/>
+                    <BlogCard title="Energía solar fotovoltaica" text="Con la cual podrás generar tu propia energía para auto consumo, además podrás vender los excedentes de está generación"/>
                     <BlogCard title="Energía solar térmica" text="Con está podrás tener agua caliente las 24 horas del día, y asi ahorrar energía(gas). además de poder calefaccionar tu hogar."/>
                     <BlogCard title="Energía Eólica" text="Con la cual también podrás generar tu propia energía eléctrica, utilizando el viento como fuente de energía."/>
                     <div className="text-center">

@@ -39,11 +39,8 @@ export default function energiaFotovoltaicaPage() {
                         className="inline-flex items-center gap-1.5 rounded-full bg-gray-100 px-3 py-1 text-xs text-gray-800 hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-200 dark:hover:bg-gray-600 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600 sm:px-4 sm:py-2 sm:text-sm transition duration-200 ease-in-out"
                         href="/contacto"
                       >
-                        Contacta con nosotros
+                        Contacto
                       </Link>
-                      <p className="text-xs text-gray-800 dark:text-gray-200 sm:text-sm">
-                        19 de enero de 2024
-                      </p>
                     </div>
 
                     <p className="text-lg text-gray-800 dark:text-gray-200">
@@ -60,7 +57,7 @@ export default function energiaFotovoltaicaPage() {
                       Tipos de paneles solares
                     </h3>
                     <p className="text-lg text-gray-800 dark:text-gray-200">
-                      Existen 2 tipos de paneles solares: <span className="font-bold">Monocristalinos</span> y <span className="font-bold">Policristalinos</span>.
+                      <span className="font-bold">Monocristalinos</span> y <span className="font-bold">Policristalinos</span>.
                     </p>
 
                     <div className="text-center">

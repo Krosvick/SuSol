@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { MythCard } from "~/app/_components/MythCard";
+import { BlogCard } from "~/app/_components/BlogCard";
 
 export default function PlanSusolPage() {
     const mitos = {
@@ -66,11 +67,8 @@ export default function PlanSusolPage() {
                         className="inline-flex items-center gap-1.5 rounded-full bg-gray-100 px-3 py-1 text-xs text-gray-800 hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-200 dark:hover:bg-gray-600 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600 sm:px-4 sm:py-2 sm:text-sm transition duration-200 ease-in-out"
                         href="/contacto"
                       >
-                        Contacta con nosotros
+                        Contacto
                       </Link>
-                      <p className="text-xs text-gray-800 dark:text-gray-200 sm:text-sm">
-                        19 de enero de 2024
-                      </p>
                     </div>
 
                     <p className="text-lg text-gray-800 dark:text-gray-200">
@@ -87,8 +85,11 @@ export default function PlanSusolPage() {
                         Nuestros servicios
                     </h3>
                     <p className="text-lg text-gray-800 dark:text-gray-200">
-                      En SuSol ofrecemos dos tipos de servicios: energía solar térmica y energía solar fotovoltaica. La energía solar térmica es aquella que se utiliza para calentar agua, mientras que la energía solar fotovoltaica es aquella que se utiliza para generar electricidad.
+                      En SuSol ofrecemos dos tipos de servicios: instalación, mantención y reparación de:
                     </p>
+                    <BlogCard title="Energía solar fotovoltaica" text="Con la cual podrás generar tu propia energía eléctrica, para tu consumo o para vender los excedentes a la red eléctrica."/>
+                    <BlogCard title="Energía solar térmica" text="Con está podrás tener agua caliente las 24 horas del día, y asi ahorrar energía(gas). además de poder calefaccionar tu hogar."/>
+                    <BlogCard title="Energía Eólica" text="Con la cual también podrás generar tu propia energía eléctrica, utilizando el viento como fuente de energía."/>
                     <div className="text-center">
                       <div className="grid gap-3 lg:grid-cols-2">
                         <div className="grid grid-cols-2 gap-3 lg:grid-cols-1">

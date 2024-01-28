@@ -41,11 +41,8 @@ export default function energiaTermicaPage() {
                         className="inline-flex items-center gap-1.5 rounded-full bg-gray-100 px-3 py-1 text-xs text-gray-800 hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-200 dark:hover:bg-gray-600 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600 sm:px-4 sm:py-2 sm:text-sm transition duration-200 ease-in-out"
                         href="/contacto"
                       >
-                        Contacta con nosotros
+                        Contacto
                       </Link>
-                      <p className="text-xs text-gray-800 dark:text-gray-200 sm:text-sm">
-                        21 de enero de 2024
-                      </p>
                     </div>
 
                     <p className="text-lg text-gray-800 dark:text-gray-200">
@@ -67,6 +64,12 @@ export default function energiaTermicaPage() {
                     <p className="text-lg text-gray-800 dark:text-gray-200">
                     Actualmente existen dos tipos de sistemas de energía solar térmica: <span className="font-bold">Presurizados</span> y por <span className="font-bold">Gravedad</span>. El primero es el más utilizado en viviendas, ya que es más económico y fácil de instalar. El segundo es más eficiente, pero también más caro y complejo de instalar.
                     </p>
+                    <h3 className="text-2xl font-bold dark:text-yellow-400 lg:text-3xl">
+                        Sistemas presurizados
+                    </h3>
+                    <p className="text-lg text-gray-800 dark:text-gray-200">
+                    Los sistemas presurizados son los más utilizados en viviendas. Se caracterizan por tener un circuito cerrado, en el que el agua circula por los tubos y se calienta con la energía del sol. Luego, el agua caliente se almacena en un termo, donde se mantiene a la temperatura deseada.
+                    </p>
                     <div className="w-full flex justify-center">
                      <figure className="lg:w-1/3 w-full">
                         <Image
@@ -81,12 +84,6 @@ export default function energiaTermicaPage() {
                         </figcaption>
                     </figure>
                     </div>
-                    <h3 className="text-2xl font-bold dark:text-yellow-400 lg:text-3xl">
-                        Sistemas presurizados
-                    </h3>
-                    <p className="text-lg text-gray-800 dark:text-gray-200">
-                    Los sistemas presurizados son los más utilizados en viviendas. Se caracterizan por tener un circuito cerrado, en el que el agua circula por los tubos y se calienta con la energía del sol. Luego, el agua caliente se almacena en un termo, donde se mantiene a la temperatura deseada.
-                    </p>
                     <h3 className="text-2xl font-bold dark:text-yellow-400 lg:text-3xl">
                         Sistemas por gravedad
                     </h3>

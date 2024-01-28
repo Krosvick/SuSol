@@ -79,7 +79,7 @@ export default function PlanSusolPage() {
                     </div>
 
                     <p className="text-lg text-gray-800 dark:text-gray-200">
-                      Muchas veces las personas tienen el mito de que la energía solar es cara y que no pueden acceder a ella. Sin embargo, en SuSol queremos cambiar esa percepción, ya que creemos que la energía solar es una inversión a largo plazo, que permite ahorrar dinero o incluso, a ganarlo. Además, es una energía limpia y renovable, que permite cuidar el medio ambiente.
+                      Muchas veces las personas tienen el mito de que la energía solar es cara y que no pueden acceder a ella. Sin embargo, en SuSol queremos cambiar esa percepción, ya que creemos que la energía solar es una inversión a corto y mediano plazo, que te permite ahorrar y ganar dinero. Además, es una energía limpia y renovable, que permite cuidar el medio ambiente.
                     </p>
                     <h3 className="text-2xl font-bold dark:text-yellow-400 lg:text-3xl">
                         Nuestros servicios

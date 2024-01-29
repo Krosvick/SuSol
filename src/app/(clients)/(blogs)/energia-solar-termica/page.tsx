@@ -143,7 +143,7 @@ export default function energiaTermicaPage() {
                     </div>
                    
                     <p className="text-lg text-gray-800 dark:text-gray-200">
-                    En SuSol nos dedicamos a la instalación de sistemas de energía solar térmica. Si quieres saber más sobre nuestros servicios, no dudes en <Link href="/contacto" className="inline-flex items-center gap-1.5 rounded-sm bg-gray-100 px-3 py-1 text-md text-black hover:bg-gray-200 dark:bg-yellow-400 dark:text-black dark:hover:bg-gray-600 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600 sm:px-4 sm:py-2 sm:text-sm transition duration-200 ease-in-out ">Contactarnos!</Link>
+                    En SuSol nos dedicamos a la instalación de sistemas de energía solar térmica. Si quieres saber más sobre nuestros servicios, no dudes en ir a nuestro: <Link href="/contacto" className="inline-flex items-center gap-1.5 rounded-sm bg-gray-100 px-3 py-1 text-md text-black hover:bg-gray-200 dark:bg-yellow-400 dark:text-black dark:hover:bg-gray-600 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600 sm:px-4 sm:py-2 sm:text-sm transition duration-200 ease-in-out ">Contacto</Link>
                     </p>
                   </div>
                 </div>

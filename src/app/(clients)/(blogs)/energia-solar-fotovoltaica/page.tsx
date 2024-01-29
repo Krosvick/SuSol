@@ -48,7 +48,7 @@ export default function energiaFotovoltaicaPage() {
                     </p>
 
                     <h3 className="text-2xl font-bold dark:text-yellow-400 lg:text-3xl">
-                        Ahorra plata en tu cuenta de luz
+                        Ahorra dinero en tu cuenta de luz
                     </h3>
                     <figure className="w-full flex justify-center">
                     <iframe width="370" height="315" src="https://www.youtube.com/embed/EU1Lk7Xn3-U?si=m1FJGeRML1pi5EM0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>

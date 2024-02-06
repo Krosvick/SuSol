@@ -5,6 +5,7 @@ import { ThemeSwitcher } from "./ThemeSwitcher";
 import { Logo } from "./icons/Logo";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 export function NavbarClient() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -66,7 +67,7 @@ export function NavbarClient() {
   return (
     <Navbar id="client-navbar" className={`py-5 ${textColorClass}`} classNames={{
         wrapper:"lg:px-3 max-w-full",
-        base:"bg-transparent dark:text-white backdrop-saturate-100 backdrop-blur-none fixed",
+        base:"bg-transparent dark:text-white backdrop-saturate-100 fixed",
     }} 
     isMenuOpen={isMenuOpen}
     onMenuOpenChange={setIsMenuOpen}>
@@ -78,7 +79,12 @@ export function NavbarClient() {
             <li>
               <Link href="/">
               <NavbarBrand className="flex gap-3">
-                  <Logo className="size-24"/>
+                <div className="w-max relative">
+                  <div className="absolute inset-12 bg-white bg-opacity-90 rounded-full z-10"></div>
+                  <div className="relative z-20">
+                    <Image src="/logowebp.webp" alt="SuSol" width={200} height={200} />
+                  </div>
+                </div>
                 <div className="flex flex-col">
                   <h1 className="font-semibold text-inherit tracking-widest text-3xl">SuSol</h1>
                   <span className="text-xs">Sustentabilidad Solar</span>

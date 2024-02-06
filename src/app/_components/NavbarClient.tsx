@@ -82,7 +82,7 @@ export function NavbarClient() {
                 <div className="w-max relative">
                   <div className="absolute inset-12 bg-white bg-opacity-90 rounded-full z-10"></div>
                   <div className="relative z-20">
-                    <Image src="/logowebp.webp" alt="SuSol" width={200} height={200} />
+                    <Image src="/logowebp.webp" alt="SuSol" width={200} height={200} priority={true}/>
                   </div>
                 </div>
                 <div className="flex flex-col">

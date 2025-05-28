@@ -1,14 +1,13 @@
-import { authMiddleware } from "@clerk/nextjs";
- 
-// This example protects all routes including api/trpc routes
-// Please edit this to allow other routes to be public as needed.
-// See https://clerk.com/docs/references/nextjs/auth-middleware for more information about configuring your Middleware
-export default authMiddleware({
-  publicRoutes: [
-    "((?!^/admin/).*)",
-  ],
-});
- 
+import { NextResponse } from 'next/server';
+import type { NextRequest } from 'next/server';
+
+// Middleware simple que permite acceso público a todas las rutas
+// Esto elimina el bloqueo de Clerk que impedía la indexación de Google
+export function middleware(request: NextRequest) {
+  // Permitir acceso a todas las rutas sin autenticación
+  return NextResponse.next();
+}
+
 export const config = {
   matcher: ["/((?!.+\\.[\\w]+$|_next).*)", "/", "/(api|trpc)(.*)"],
 };

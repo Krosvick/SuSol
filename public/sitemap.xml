@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Página principal -->
+  <url>
+    <loc>https://susol.cl/</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://susol.cl/images/hero_img.webp</image:loc>
+      <image:caption>SuSol - Energía solar en Tarapacá, instalación de paneles solares y termos</image:caption>
+      <image:title>SuSol - Energía Solar Tarapacá</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://susol.cl/images/paneles/on-grid.jpg</image:loc>
+      <image:caption>Sistema de paneles solares on-grid para autoconsumo en Tarapacá</image:caption>
+      <image:title>Paneles Solares On-Grid Tarapacá</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://susol.cl/images/termos/presurizado.jpg</image:loc>
+      <image:caption>Termos solares presurizados - Instalación y mantenimiento en Tarapacá</image:caption>
+      <image:title>Termos Solares Presurizados Tarapacá</image:title>
+    </image:image>
+  </url>
+  
+  <!-- Contacto -->
+  <url>
+    <loc>https://susol.cl/contacto</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Nosotros -->
+  <url>
+    <loc>https://susol.cl/nosotros</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://susol.cl/images/articles/solarinstaller.jpg</image:loc>
+      <image:caption>Equipo profesional de instaladores de paneles solares en Tarapacá</image:caption>
+      <image:title>Instaladores Profesionales SuSol</image:title>
+    </image:image>
+  </url>
+  
+  <!-- Blog - Energía Solar Fotovoltaica -->
+  <url>
+    <loc>https://susol.cl/energia-solar-fotovoltaica</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://susol.cl/images/articles/solar_panel.jpg</image:loc>
+      <image:caption>Paneles solares fotovoltaicos - Energía renovable en Tarapacá</image:caption>
+      <image:title>Energía Solar Fotovoltaica Tarapacá</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://susol.cl/images/paneles/hybrid.jpg</image:loc>
+      <image:caption>Sistema híbrido de paneles solares - Instalación en Tarapacá</image:caption>
+      <image:title>Sistema Híbrido Solar Tarapacá</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://susol.cl/images/paneles/off-grid.jpg</image:loc>
+      <image:caption>Sistema off-grid de paneles solares para zonas aisladas en Tarapacá</image:caption>
+      <image:title>Sistema Off-Grid Solar Tarapacá</image:title>
+    </image:image>
+  </url>
+  
+  <!-- Blog - Energía Solar Térmica -->
+  <url>
+    <loc>https://susol.cl/energia-solar-termica</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://susol.cl/images/articles/termo_lg.jpg</image:loc>
+      <image:caption>Termos solares - Energía solar térmica para agua caliente en Tarapacá</image:caption>
+      <image:title>Termos Solares Energía Térmica Tarapacá</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://susol.cl/images/termos/casa.jpg</image:loc>
+      <image:caption>Instalación de termos solares en viviendas de Tarapacá</image:caption>
+      <image:title>Instalación Termos Solares Casa Tarapacá</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://susol.cl/images/termos/info.jpg</image:loc>
+      <image:caption>Información técnica sobre termos solares y mantenimiento</image:caption>
+      <image:title>Información Termos Solares Tarapacá</image:title>
+    </image:image>
+  </url>
+  
+  <!-- Plan SuSol -->
+  <url>
+    <loc>https://susol.cl/plan-susol</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://susol.cl/images/Logo.svg</image:loc>
+      <image:caption>Plan SuSol - Financiamiento para energía solar en Tarapacá</image:caption>
+      <image:title>Plan SuSol Financiamiento</image:title>
+    </image:image>
+  </url>
+  
+</urlset> 

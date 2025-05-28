@@ -1,0 +1,23 @@
+User-agent: *
+Allow: /
+
+# Permitir indexación de todas las páginas importantes
+Allow: /contacto
+Allow: /nosotros
+Allow: /energia-solar-fotovoltaica
+Allow: /energia-solar-termica
+Allow: /plan-susol
+
+# Bloquear archivos de desarrollo y configuración
+Disallow: /_next/
+Disallow: /api/
+Disallow: /.env
+Disallow: /node_modules/
+
+# Sitemap
+Sitemap: https://susol.cl/sitemap.xml
+
+# Información adicional para bots
+# Empresa: SuSol - Instalación, Mantenimiento y Reparación de Paneles Solares y Termos Solares en Tarapacá, Chile
+# Servicios: Energía renovable, instalación de placas fotovoltaicas, autoconsumo, mantenimiento de paneles solares, reparación de termos solares
+# Área de servicio: Tarapacá, Iquique, Alto Hospicio 

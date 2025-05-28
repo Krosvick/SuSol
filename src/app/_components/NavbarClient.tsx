@@ -65,55 +65,80 @@ export function NavbarClient() {
   ];
 
   return (
-    <Navbar id="client-navbar" className={`py-5 ${textColorClass}`} classNames={{
-        wrapper:"lg:px-3 max-w-full",
-        base:"bg-transparent dark:text-white backdrop-saturate-100 fixed",
-    }} 
-    isMenuOpen={isMenuOpen}
-    onMenuOpenChange={setIsMenuOpen}>
-        <NavbarContent>
-            <NavbarMenuToggle
-                aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-                className="sm:hidden"
-            />
-            <li>
-              <Link href="/">
-              <NavbarBrand className="flex gap-3">
-                <div className="w-max relative">
-                  <div className="absolute inset-12 bg-white bg-opacity-90 rounded-full z-10"></div>
-                  <div className="relative z-20">
-                    <Image src="/logowebp.webp" alt="SuSol" width={200} height={200} priority={true}/>
-                  </div>
-                </div>
-                <div className="flex flex-col">
-                  <h1 className="font-semibold text-inherit tracking-widest text-3xl">SuSol</h1>
-                  <span className="text-xs">Sustentabilidad Solar</span>
-                </div>
-              </NavbarBrand>
-              </Link>
-            </li>
-        </NavbarContent>
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
+    <Navbar 
+      id="client-navbar" 
+      className={`py-3 ${textColorClass}`} 
+      classNames={{
+        wrapper: "lg:px-6 max-w-full",
+        base: "bg-transparent dark:text-white backdrop-saturate-100 fixed z-50",
+      }} 
+      isMenuOpen={isMenuOpen}
+      onMenuOpenChange={setIsMenuOpen}
+      maxWidth="full"
+    >
+      {/* Contenido izquierdo - Logo y toggle menu */}
+      <NavbarContent justify="start" className="gap-4 flex-1 basis-0">
+        <NavbarMenuToggle
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          className="lg:hidden"
+        />
+        <Link href="/" className="flex items-center">
+          <NavbarBrand className="flex items-center gap-3">
+            <div className="relative w-12 h-12 lg:w-16 lg:h-16">
+              <div className="absolute inset-0 bg-white bg-opacity-90 rounded-full"></div>
+              <div className="relative w-full h-full flex items-center justify-center">
+                <Image 
+                  src="/logowebp.webp" 
+                  alt="SuSol" 
+                  width={100} 
+                  height={100} 
+                  className="lg:w-100 lg:h-100"
+                  priority={true}
+                />
+              </div>
+            </div>
+            <div className="flex flex-col">
+              <h1 className="font-semibold text-inherit tracking-widest text-xl lg:text-2xl">SuSol</h1>
+              <span className="text-xs lg:text-sm opacity-80">Sustentabilidad Solar</span>
+            </div>
+          </NavbarBrand>
+        </Link>
+      </NavbarContent>
+
+      {/* Contenido central - Navegación principal */}
+      <NavbarContent className="hidden lg:flex gap-6" justify="center">
         {navItems.map(item => (
           <NavbarItem key={item.href} isActive={pathname === item.href}>
-            <Link color="foreground" href={item.href}>
+            <Link 
+              href={item.href}
+              className={`font-medium hover:text-yellow-400 transition-colors ${
+                pathname === item.href ? 'text-yellow-400' : ''
+              }`}
+            >
               {item.label}
             </Link>
           </NavbarItem>
         ))}
       </NavbarContent>
-      <NavbarContent justify="end">
-        <NavbarItem className="hidden lg:hidden">
-            xD
-        </NavbarItem>
-        <NavbarItem className="lg:pr-3">
-            <ThemeSwitcher />
+
+      {/* Contenido derecho - Theme switcher */}
+      <NavbarContent justify="end" className="flex-1 basis-0">
+        <NavbarItem>
+          <ThemeSwitcher />
         </NavbarItem>
       </NavbarContent>
-      <NavbarMenu className="mt-8"> 
+
+      {/* Menu móvil */}
+      <NavbarMenu className="mt-8 pt-6"> 
         {navItemsResponsive.map(item => (
-          <NavbarMenuItem key={item.href} className="py-2 text-xl">
-            <CloseMenuLink href={item.href}>{item.label}</CloseMenuLink>
+          <NavbarMenuItem key={item.href} className="py-3">
+            <CloseMenuLink href={item.href}>
+              <span className={`text-xl font-medium hover:text-yellow-400 transition-colors ${
+                pathname === item.href ? 'text-yellow-400' : ''
+              }`}>
+                {item.label}
+              </span>
+            </CloseMenuLink>
           </NavbarMenuItem>
         ))}
       </NavbarMenu>

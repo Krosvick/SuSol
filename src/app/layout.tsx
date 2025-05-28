@@ -5,6 +5,7 @@ import {Providers} from "./providers";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Analytics } from '@vercel/analytics/react';
 import { Metadata } from 'next';
+import { WhatsAppFloat } from "./_components/WhatsAppFloat";
 
 const poppins = Poppins({
   weight: ["200","300","400", "500", "600", "700", "800", "900"],
@@ -103,6 +104,7 @@ export default function RootLayout({
       <body className={`font-sans ${poppins.variable}`}>
           <Providers>
               {children}
+              <WhatsAppFloat />
           </Providers>
           <SpeedInsights/>
           <Analytics /> 
